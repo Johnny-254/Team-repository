@@ -15,19 +15,21 @@
 <body>
   <div class="container">
     <nav>
-      <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contacts</a>
-        <div class="animation start-home"></div>
-        <button type="button" class="btn btn-primary sign" data-bs-toggle="modal" data-bs-target="#myModal">
-          Sign-Up
-        </button>
-        <button type="button" class="btn btn-primary sign" data-bs-toggle="modal" data-bs-target="#myModal2">
-          Log-In
+      <div class="dropdown"><button class="drop-btn"><img src="https://img.icons8.com/ios-filled/50/null/circled-menu.png"/></button>
+        <div class="drop-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contacts</a>
+          <div class="animation start-home">hAy</div>
+          <button type="button" class="btn btn-primary sign" data-bs-toggle="modal" data-bs-target="#myModal">
+            Sign-Up
           </button>
+          <button type="button" class="btn btn-primary log-in" data-bs-toggle="modal" data-bs-target="#myModal2">
+            Log-In
+          </button>
+        </div>
       </div>
     </nav>
     </div>  
@@ -78,7 +80,7 @@
               <div class="pt-1 mb-4">
                 <button class="btn btn-dark btn-lg btn-block" type="button">Register</button>
               </div>
-              <div>Already have an account with us <a href="#!" style="color: #393f81">Log-In</a></div>
+              <div>Already have an account with us <a href="#!">Log-In</a></div>
               <a href="#!" class="small text-muted">Terms of use.</a>
               <a href="#!" class="small text-muted">Privacy policy</a>
             </form>          
@@ -92,7 +94,7 @@
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-              <h4 class="modal-title">Sign-Up</h4>
+              <h4 class="modal-title">Welcome back.</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <!-- Modal body -->
@@ -100,11 +102,8 @@
             <form>
 
               <div class="d-flex align-items-center mb-3 pb-1">
-                <span class="h1 fw-bold mb-0">Logo</span>
+                <h6>Enter your details to access personalised content just for you.</h6>
               </div>
-
-              <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
-
               <div class="form-outline mb-4">
                 <input type="email" id="form2Example17" class="form-control form-control-lg" />
                 <label class="form-label" for="form2Example17">Email address</label>
@@ -120,13 +119,15 @@
               </div>
 
               <a class="small text-muted" href="#!">Forgot password?</a>
-              <p class="mb-5 pb-lg-2">Don't have an account? <a href="#!" style="color: #393f81;">Register here</a></p>
+              <p class="mb-5 pb-lg-2">Don't have an account? <a href="#!">Register here</a></p>
               <a href="#!" class="small text-muted">Terms of use.</a>
               <a href="#!" class="small text-muted">Privacy policy</a>
             </form>
           </div>     
         </div>   
       </div>
+    </div>
+    
     </div>          
   </div>
 </body>
