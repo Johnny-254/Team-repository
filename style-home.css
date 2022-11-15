@@ -1,0 +1,262 @@
+/* Navbar */
+nav{
+    margin-top: 27px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 12px;
+    font-size: 0;
+}
+nav a{
+    text-transform: uppercase;
+    display: inline-block;
+    justify-content: left;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 100%;
+    z-index: 1;
+    color: #fff;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+nav a:nth-child(1){
+    width: 100px;
+}
+nav a:nth-child(2){
+    width: 110px;
+}
+nav a:nth-child(3){
+    width: 100px;
+}
+nav a:nth-child(4){
+    width: 160px;
+}
+nav a:nth-child(5){
+    width: 120px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+nav a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 9%;
+    background-color: #e74c3c;
+}
+nav a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 19%;
+    background-color: #3498db;
+}
+nav a:nth-child(4):hover~.animation{
+    width: 160px;
+    left: 28%;
+    background-color: #9b59b6;
+}
+nav a:nth-child(5):hover~.animation{
+    width: 120px;
+    left: 42%;
+    background-color: #e67e22;
+}
+nav .log-in{
+    background-color: #34495e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+    float: right;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 14px;;
+}
+nav .sign{
+    background-color: #34495e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+    float: right;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 14px;
+}
+
+nav .sign:hover{
+    background-color: #0ff;
+    color: #2c3e50;
+}
+/* End Navbar */
+
+body{
+    font-size: 12px;
+    font-family: sans-serif;
+    background-image: url(Images/img4.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+span{
+    color: #2bd6b4;
+}
+.main{
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 34vh;
+    color: #fff;
+}
+.main h3{
+    font-family: nike combat stencil;
+}
+.main button{
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #34495e;
+    padding: 10px 50px 10px 50px;
+    /* box-shadow: ; */
+}
+.main button:hover{
+    background-color: #3498db;
+}
+@media only screen and (min-width:1400px){
+    nav .start-home,a:nth-child(1):hover~.animation{
+        width: 100px;
+        left: 0%;
+        background-color: #1abc9c;
+    }
+    nav a:nth-child(2):hover~.animation{
+        width: 110px;
+        left: 8%;
+        background-color: #e74c3c;
+    }
+    nav a:nth-child(3):hover~.animation{
+        width: 100px;
+        left: 16%;
+        background-color: #3498db;
+    }
+    nav a:nth-child(4):hover~.animation{
+        width: 160px;
+        left: 24%;
+        background-color: #9b59b6;
+    }
+    nav a:nth-child(5):hover~.animation{
+        width: 120px;
+        left: 36%;
+        background-color: #e67e22;
+    }
+}
+@media only screen and (max-width:1199px){
+    nav .start-home,a:nth-child(1):hover~.animation{
+        width: 100px;
+        left: 0%;
+        background-color: #1abc9c;
+    }
+    nav a:nth-child(2):hover~.animation{
+        width: 110px;
+        left: 10.5%;
+        background-color: #e74c3c;
+    }
+    nav a:nth-child(3):hover~.animation{
+        width: 100px;
+        left: 22%;
+        background-color: #3498db;
+    }
+    nav a:nth-child(4):hover~.animation{
+        width: 160px;
+        left: 33%;
+        background-color: #9b59b6;
+    }
+    nav a:nth-child(5):hover~.animation{
+        width: 120px;
+        left: 50%;
+        background-color: #e67e22;
+    }
+}
+@media only screen and (min-width:992px){
+    .dropdown .drop-btn{
+        display: none;
+    }
+}
+@media only screen and (max-width:992px){
+    .dropdown{
+        position: relative;
+        float: right;
+    }
+    .dropdown .drop-btn{
+        background-color: #f0f0;
+        border: none;
+        border-radius: 10px;
+    }
+    .drop-content{
+        display: none;
+        position: absolute;
+        border-radius: 5px;
+        padding-left: 20px;
+        background-color: #000;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .dropdown:hover .drop-content{
+        display: block;
+    }
+    nav a{
+        text-align: start;
+    }
+    nav .sign{
+        float: left;
+    }
+    nav .log-in{
+        float: left;
+    }
+    nav .start-home,a:nth-child(1):hover~.animation{
+        width: 100%;
+        height: 13%;
+        left: 0;
+        top: 0;
+        background-color: #1abc9c;
+    }
+    nav a:nth-child(2):hover~.animation{
+        width: 100%;
+        height: 13%;
+        left: 0;
+        top: 14%;
+        background-color: #e74c3c;
+    }
+    nav a:nth-child(3):hover~.animation{
+        width: 100%;
+        height: 13%;
+        left: 0;
+        top: 28%;
+        background-color: #3498db;
+    }
+    nav a:nth-child(4):hover~.animation{
+        width: 100%;
+        height: 13%;
+        left: 0;
+        top: 41%;
+        background-color: #9b59b6;
+    }
+    nav a:nth-child(5):hover~.animation{
+        width: 100%;
+        height: 13%;
+        left: 0;
+        top: 54%;
+        background-color: #e67e22;
+    }
+}
